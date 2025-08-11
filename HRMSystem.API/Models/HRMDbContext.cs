@@ -6,5 +6,6 @@ namespace HRMSystem.API.Models
     {
         public HRMDbContext(DbContextOptions<HRMDbContext> options) : base(options) { }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Department> Departments { get; set; }
     }
 }

@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|e:\\angular\\mini project\\hrmsystem.api\\hrmsystem.api\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|solutionrelative:hrmsystem.api\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|e:\\angular\\mini project\\hrmsystem.api\\hrmsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|solutionrelative:hrmsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|e:\\angular\\mini project\\hrmsystem.api\\hrmsystem.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|solutionrelative:hrmsystem.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|e:\\angular\\mini project\\hrmsystem.api\\hrmsystem.api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|solutionrelative:hrmsystem.api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|e:\\angular\\mini project\\hrmsystem.api\\hrmsystem.api\\models\\hrmdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|solutionrelative:hrmsystem.api\\models\\hrmdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|e:\\angular\\mini project\\hrmsystem.api\\hrmsystem.api\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|solutionrelative:hrmsystem.api\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|e:\\angular\\mini project\\hrmsystem.api\\hrmsystem.api\\migrations\\20250801151127_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|solutionrelative:hrmsystem.api\\migrations\\20250801151127_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|e:\\angular\\mini project\\hrmsystem.api\\hrmsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{659E31D7-9230-4FA3-B9CC-5D3391C2E80F}|HRMSystem.API\\HRMSystem.API.csproj|solutionrelative:hrmsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,75 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EmployeesController.cs",
-              "DocumentMoniker": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\Controllers\\EmployeesController.cs",
-              "RelativeDocumentMoniker": "HRMSystem.API\\Controllers\\EmployeesController.cs",
-              "ToolTip": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\Controllers\\EmployeesController.cs",
-              "RelativeToolTip": "HRMSystem.API\\Controllers\\EmployeesController.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T15:13:25.063Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20250801151127_initial.cs",
-              "DocumentMoniker": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\Migrations\\20250801151127_initial.cs",
-              "RelativeDocumentMoniker": "HRMSystem.API\\Migrations\\20250801151127_initial.cs",
-              "ToolTip": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\Migrations\\20250801151127_initial.cs",
-              "RelativeToolTip": "HRMSystem.API\\Migrations\\20250801151127_initial.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T15:11:28.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\Program.cs",
               "RelativeDocumentMoniker": "HRMSystem.API\\Program.cs",
               "ToolTip": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\Program.cs",
               "RelativeToolTip": "HRMSystem.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T16:37:18.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\appsettings.json",
-              "RelativeDocumentMoniker": "HRMSystem.API\\appsettings.json",
-              "ToolTip": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\appsettings.json",
-              "RelativeToolTip": "HRMSystem.API\\appsettings.json",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-31T16:33:04.726Z"
+              "WhenOpened": "2025-08-10T03:54:07.015Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "HRMSystem.API\\Controllers\\DepartmentController.cs",
+              "ToolTip": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "HRMSystem.API\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T03:28:19.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "HRMDbContext.cs",
               "DocumentMoniker": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\Models\\HRMDbContext.cs",
               "RelativeDocumentMoniker": "HRMSystem.API\\Models\\HRMDbContext.cs",
               "ToolTip": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\Models\\HRMDbContext.cs",
               "RelativeToolTip": "HRMSystem.API\\Models\\HRMDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T16:31:33.137Z"
+              "WhenOpened": "2025-08-10T03:25:14.883Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "HRMSystem.API\\Models\\Employee.cs",
-              "ToolTip": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\Models\\Employee.cs",
-              "RelativeToolTip": "HRMSystem.API\\Models\\Employee.cs",
+              "DocumentIndex": 0,
+              "Title": "Department.cs",
+              "DocumentMoniker": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "HRMSystem.API\\Models\\Department.cs",
+              "ToolTip": "E:\\angular\\MINI PROJECT\\HRMSystem.API\\HRMSystem.API\\Models\\Department.cs",
+              "RelativeToolTip": "HRMSystem.API\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T16:26:44.905Z"
+              "WhenOpened": "2025-08-10T03:24:40.845Z",
+              "EditorCaption": ""
             }
           ]
         }

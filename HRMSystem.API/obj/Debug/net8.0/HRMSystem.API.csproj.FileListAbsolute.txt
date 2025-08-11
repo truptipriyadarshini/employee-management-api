@@ -169,3 +169,4 @@ E:\angular\MINI PROJECT\HRMSystem.API\HRMSystem.API\obj\Debug\net8.0\rjsmcshtml.
 E:\angular\MINI PROJECT\HRMSystem.API\HRMSystem.API\obj\Debug\net8.0\staticwebassets.build.json.cache
 E:\angular\MINI PROJECT\HRMSystem.API\HRMSystem.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 E:\angular\MINI PROJECT\HRMSystem.API\HRMSystem.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+E:\angular\MINI PROJECT\HRMSystem.API\HRMSystem.API\obj\Debug\net8.0\HRMSystem.API.sourcelink.json
