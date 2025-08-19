@@ -20,15 +20,44 @@ namespace HRMSystem.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
         {
-            return await _context.Employees.ToListAsync();
+            var employees = _context.Employees
+        .Include(e => e.Department)
+        .Select(e => new Employee
+        {
+            Id = e.Id,
+            Name = e.Name,
+            DepartmentId = e.DepartmentId,
+            DepartmentName = e.Department!.DepartmentName, // flat property
+            Email = e.Email,
+            DateOfJoining = e.DateOfJoining
+        })
+        .ToList();
+
+            return Ok(employees);
         }
 
         // GET: api/Employees/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Employee>> GetEmployee(int id)
         {
-            var employee = await _context.Employees.FindAsync(id);
-            return employee == null ? NotFound() : employee;
+            var employee = await _context.Employees
+        .Include(e => e.Department)
+        .Where(e => e.Id == id)
+        .Select(e => new
+        {
+            e.Id,
+            e.Name,
+            e.DepartmentId,
+            DepartmentName = e.Department!.DepartmentName, // 👈 Flattened property
+            e.Email,
+            e.DateOfJoining
+        })
+        .FirstOrDefaultAsync();
+
+            if (employee == null)
+                return NotFound();
+
+            return Ok(employee);
         }
 
         // POST: api/Employees
