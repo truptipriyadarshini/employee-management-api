@@ -14,5 +14,8 @@ namespace HRMSystem.API.Models
         public string? DepartmentName { get; set; }
         [JsonIgnore] // 👈 hides from JSON output
         public Department? Department { get; set; }
+        // Foreign key for Role
+        public int? RoleId { get; set; }
+        public string? RoleName { get; set; }   // may be null
     }
 }

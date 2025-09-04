@@ -20,18 +20,22 @@ namespace HRMSystem.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
         {
-            var employees = _context.Employees
-        .Include(e => e.Department)
-        .Select(e => new Employee
-        {
-            Id = e.Id,
-            Name = e.Name,
-            DepartmentId = e.DepartmentId,
-            DepartmentName = e.Department!.DepartmentName, // flat property
-            Email = e.Email,
-            DateOfJoining = e.DateOfJoining
-        })
-        .ToList();
+            var employees = await (
+                from e in _context.Employees
+                join r in _context.Roles on e.RoleId equals r.RoleId into rg
+                from role in rg.DefaultIfEmpty()   // LEFT JOIN: employees without role still included
+                select new Employee
+                {
+                    Id = e.Id,
+                    Name = e.Name,
+                    DepartmentId = e.DepartmentId,
+                    DepartmentName = e.Department != null ? e.Department.DepartmentName : null!,
+                    Email = e.Email,
+                    DateOfJoining = e.DateOfJoining,
+                    RoleId = e.RoleId,
+                    RoleName = role != null ? role.RoleName : null
+                })
+                .ToListAsync();
 
             return Ok(employees);
         }
@@ -92,6 +96,31 @@ namespace HRMSystem.API.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        [HttpGet("WithRoles")]
+        public IActionResult getemployeewithrole()
+        {
+            var employee = from e in _context.Employees join r in _context.Roles on e.RoleId
+                           equals r.RoleId into er from role in er.DefaultIfEmpty() //leftjoin
+                           select new
+                           {
+                               e.Id,
+                               e.Name,
+                               rolename = role != null ? role.RoleName : null,
+                           };
+            return Ok(employee.ToList());
+        }
+
+        [HttpPut("{id}/assign-role")]
+        public async Task<IActionResult> assignrole(int id, int roleId)
+        {
+            var employee = await _context.Employees.FindAsync(id);
+            if(employee == null)
+                return NotFound();
+            employee.RoleId = roleId; // assign new role
+            await _context.SaveChangesAsync();
+            return Ok();
         }
 
     }
